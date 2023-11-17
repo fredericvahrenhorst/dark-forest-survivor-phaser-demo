@@ -1,0 +1,456 @@
+{
+    "anims": [
+        {
+            "key": "hero-pull-left",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile171"
+                }
+            ]
+        },
+        {
+            "key": "hero-pull-right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile170"
+                }
+            ]
+        },
+        {
+            "key": "hero-pull-up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile169"
+                }
+            ]
+        },
+        {
+            "key": "hero-pull-down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile168"
+                }
+            ]
+        },
+        {
+            "key": "hero-pitfall",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile156"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile157"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile158"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile159"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile160"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile161"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile162"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile163"
+                }
+            ]
+        },
+        {
+            "key": "hero-death",
+            "type": "frames",
+            "repeat": 0,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile144"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile145"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile146"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile147"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile148"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile149"
+                }
+            ]
+        },
+        {
+            "key": "hero-attack-left",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile084"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile085"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile086"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile087"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile088"
+                }
+            ]
+        },
+        {
+            "key": "hero-attack-right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile072"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile073"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile074"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile075"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile076"
+                }
+            ]
+        },
+        {
+            "key": "hero-attack-down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile060"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile061"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile062"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile063"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile064"
+                }
+            ]
+        },
+        {
+            "key": "hero-attack-up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile048"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile049"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile050"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile051"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile052"
+                }
+            ]
+        },
+        {
+            "key": "hero-run-left",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile036"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile037"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile038"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile039"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile040"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile041"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile042"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile043"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile044"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile045"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile046"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile047"
+                }
+            ]
+        },
+        {
+            "key": "hero-run-right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile024"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile025"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile026"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile027"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile028"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile029"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile030"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile031"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile032"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile033"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile034"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile035"
+                }
+            ]
+        },
+        {
+            "key": "hero-run-up",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile012"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile013"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile014"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile015"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile016"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile017"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile018"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile019"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile020"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile021"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile022"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile023"
+                }
+            ]
+        },
+        {
+            "key": "hero-run-down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "hero",
+                    "frame": "tile001"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile002"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile003"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile004"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile005"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile006"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile007"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile008"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile009"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile010"
+                },
+                {
+                    "key": "hero",
+                    "frame": "tile011"
+                }
+            ]
+        }
+    ]
+}

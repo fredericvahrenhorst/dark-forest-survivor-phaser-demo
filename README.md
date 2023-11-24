@@ -1,5 +1,9 @@
 # Dark Forest Survivor Phaser Demo
 
+## Live Link
+
+[Click here](http://ikraamghoor.com/ForestRPG/)
+
 ## Setup
 
 Make sure to install the dependencies:
@@ -16,9 +20,6 @@ Start the development server on `http://localhost:3000`:
 # npm
 npm run dev
 
-## Live Link
-
-[Click here](http://ikraamghoor.com/ForestRPG/)
 
 ## Frameworks
 - Nuxt JS

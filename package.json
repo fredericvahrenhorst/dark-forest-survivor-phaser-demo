@@ -16,6 +16,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^21.0.0",
     "i": "^0.3.7",
     "npm": "^10.2.0",
     "phaser": "^3.60.0",

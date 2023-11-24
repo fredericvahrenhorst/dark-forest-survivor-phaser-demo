@@ -3,6 +3,7 @@ import Player from './Player';
 import Resources from './Resources';
 import Door from './Door';
 import Enemy from './Enemy';
+import DayNightCircle from './DayNightCircle';
 
 export default class MainScene extends Phaser.Scene {
     constructor() {
@@ -31,10 +32,10 @@ export default class MainScene extends Phaser.Scene {
 
         this.load.audio('theme-regular', 'assets/audio/theme-regular.mp3');
     }
+
     create() {
         // Load the tilemap
         const map = this.make.tilemap({ key: 'mapjson' });
-
         // const tileset = map.addTilesetImage('RPG-Nature-Tileset', 'tilespng', 32, 32, 1, 2);
         const tilesetProps = map.addTilesetImage('forest-props', 'forest-props');
         const tileset = map.addTilesetImage('forest-tileset', 'forest-tileset');
@@ -64,7 +65,7 @@ export default class MainScene extends Phaser.Scene {
         // for each layer
         Object.keys(this.layers).forEach(layerName => {
             const layer = this.layers[layerName];
-            layer.setCollisionByProperty({ collides: true });
+            layer.setCollisionByProperty({ collides: true }).setPipeline('Light2D');
             this.matter.world.convertTilemapLayer(layer);
         });
 
@@ -78,7 +79,7 @@ export default class MainScene extends Phaser.Scene {
         // this.map.getObjectLayer('enemies').objects.forEach(enemy => this.enemies.push( new Enemy({ scene:this, enemy }) ));
 
         // Play theme Music
-        this.music = this.sound.play('theme-regular', { loop: true, volume: 0.5 });
+        // this.music = this.sound.play('theme-regular', { loop: true, volume: 0.5 });
 
         // Create the Player
         this.player = new Player({ scene: this, x: 1451, y: 1008, texture: 'hero', frame: 'tile000' });
@@ -105,6 +106,14 @@ export default class MainScene extends Phaser.Scene {
             if (this.scene.isActive('CraftingScene')) this.scene.stop('CraftingScene');
             else this.scene.launch('CraftingScene', { mainScene: this });
         });
+
+        // this.lights.enable().setAmbientColor(0x242424);
+        // this.lights.enable().setAmbientColor(0xcccccc);
+        this.dayNightCircle = new DayNightCircle(this); // Instantiate DayNightManager
+
+        setInterval(() => {
+            this.dayNightCircle.toggleDayNight();
+        }, 2000);
     }
 
     update() {

@@ -38,6 +38,10 @@ export default class Player extends MatterEntity {
 
         this.createPickupCollisions(playerCollider);
 
+        this.setPipeline('Light2D');
+
+        this.light = scene.lights.addLight(this.x, this.y, 100).setColor(0xffffff).setIntensity(1);
+
         // this.scene.input.on('pointermove', pointer => {
         //     const cursor = pointer;
         //     const playerPosition = new Phaser.Math.Vector2(this.x, this.y);
@@ -54,6 +58,9 @@ export default class Player extends MatterEntity {
     };
 
     update() {
+        this.light.x = this.x;
+        this.light.y = this.y;
+
         if (this.dead) return;
 
         if (this.inventory.selectedItem) {

@@ -96,5 +96,6 @@ export default class Resources extends MatterEntity {
 
         this.setStatic(true);
         this.setOrigin(0.5, resourceData.yOrigin);
+        this.setPipeline('Light2D');
     }
 }

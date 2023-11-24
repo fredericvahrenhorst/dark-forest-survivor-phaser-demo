@@ -2,7 +2,7 @@
 
 ## Live Link
 
-[Click here](http://ikraamghoor.com/ForestRPG/)
+[Click here](https://dfs-phaser-demo.netlify.app/)
 
 ## Setup
 

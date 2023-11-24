@@ -1,7 +1,5 @@
 # Dark Forest Survivor Phaser Demo
 
-Live Demo: [a link](https://dfs-phaser-demo.netlify.app/)
-
 ## Setup
 
 Make sure to install the dependencies:
@@ -18,19 +16,9 @@ Start the development server on `http://localhost:3000`:
 # npm
 npm run dev
 
-## Production
+## Live Link
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
+[Click here](http://ikraamghoor.com/ForestRPG/)
 
 ## Frameworks
 - Nuxt JS

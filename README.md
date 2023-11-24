@@ -1,5 +1,7 @@
 # Dark Forest Survivor Phaser Demo
 
+Live Demo: [a link](https://dfs-phaser-demo.netlify.app/)
+
 ## Setup
 
 Make sure to install the dependencies:

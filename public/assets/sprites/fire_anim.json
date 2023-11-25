@@ -1,0 +1,28 @@
+{
+    "anims": [
+        {
+            "key": "fire-burns",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 7,
+            "frames": [
+                {
+                    "key": "fire",
+                    "frame": "tile000"
+                },
+                {
+                    "key": "fire",
+                    "frame": "tile001"
+                },
+                {
+                    "key": "fire",
+                    "frame": "tile002"
+                },
+                {
+                    "key": "fire",
+                    "frame": "tile003"
+                }
+            ]
+        }
+    ]
+}

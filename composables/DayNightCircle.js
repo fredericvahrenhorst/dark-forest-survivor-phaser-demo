@@ -1,14 +1,15 @@
 export default class DayNightCircle {
     constructor(scene) {
         this.scene = scene;
-        this.isDaytime = true; // Flag to track day/night state
+        this.scene.isDaytime = true; // Flag to track day/night state
 
-        this.ambientColors = [0x1b1b1b, 0x363636, 0x626262, 0x9f9f9f, 0xc5c5c5, 0xcccccc];
-        this.scene.lights.enable().setAmbientColor(this.ambientColors.length - 1); // Set initial ambient color
+        // Ambient colors for day/night cycle - Tailwind Slate Shades
+        this.ambientColors = [0x020617, 0x0f172a, 0x1e293b, 0x334155, 0x475569, 0x64748b, 0x94a3b8, 0xcbd5e1, 0xe2e8f0, 0xf1f5f9, 0xf8fafc];
+        this.scene.lights.enable().setAmbientColor(this.ambientColors[this.ambientColors.length - 1]); // Set initial ambient color
     }
 
     toggleDayNight() {
-        this.isDaytime = !this.isDaytime;
+        this.scene.isDaytime = !this.scene.isDaytime;
         this.ambientColors.reverse();
 
         this.updateAmbientColor();

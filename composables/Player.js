@@ -40,7 +40,7 @@ export default class Player extends MatterEntity {
 
         this.setPipeline('Light2D');
 
-        this.light = scene.lights.addLight(this.x, this.y, 100).setColor(0xffffff).setIntensity(1);
+        this.light = scene.lights.addLight(this.x, this.y, 40).setColor(0xf8fafc).setIntensity(1);
 
         // this.scene.input.on('pointermove', pointer => {
         //     const cursor = pointer;

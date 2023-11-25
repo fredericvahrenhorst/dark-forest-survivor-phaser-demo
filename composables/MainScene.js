@@ -3,14 +3,17 @@ import Player from './Player';
 import Resources from './Resources';
 import Door from './Door';
 import Enemy from './Enemy';
+import Fires from './Fires';
 import DayNightCircle from './DayNightCircle';
 
 export default class MainScene extends Phaser.Scene {
     constructor() {
         super('MainScene');
 
+        this.isDaytime = true; // Flag to track day/night state
         this.enemies = [];
         this.objects = [];
+        this.fires = [];
     }
 
     preload() {
@@ -18,6 +21,7 @@ export default class MainScene extends Phaser.Scene {
         Resources.preload(this);
         Door.preload(this);
         Enemy.preload(this);
+        Fires.preload(this);
         // this.load.image('tilespng', 'assets/tiles/RPG-Nature-Tileset-extended.png');
         // this.load.tilemapTiledJSON('mapjson', 'assets/tiles/map.json');
 
@@ -75,6 +79,9 @@ export default class MainScene extends Phaser.Scene {
         // // Create the Resources layer
         this.map.getObjectLayer('resources').objects.forEach(resource => new Resources({ scene:this, resource }));
 
+        // Create Fires Layer
+        this.map.getObjectLayer('fires').objects.forEach(fire => this.fires.push( new Fires({ scene:this, fire }) ));
+
         // // Create the Enemies layer
         // this.map.getObjectLayer('enemies').objects.forEach(enemy => this.enemies.push( new Enemy({ scene:this, enemy }) ));
 
@@ -107,16 +114,17 @@ export default class MainScene extends Phaser.Scene {
             else this.scene.launch('CraftingScene', { mainScene: this });
         });
 
-        // this.lights.enable().setAmbientColor(0x242424);
-        // this.lights.enable().setAmbientColor(0xcccccc);
+
         this.dayNightCircle = new DayNightCircle(this); // Instantiate DayNightManager
 
         setInterval(() => {
             this.dayNightCircle.toggleDayNight();
-        }, 2000);
+        }, 5000);
     }
 
     update() {
+        // console.log(this.isDaytime);
+        this.fires.forEach(fire => fire.update());
         this.enemies.forEach(enemy => enemy.update());
         this.player.update();
     }
